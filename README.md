@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=DeepFER&fontSize=70&fontColor=ffffff&desc=Facial%20Emotion%20Recognition%20%E2%80%A2%20CNN%20vs%20MobileNetV2&descAlignY=58&descSize=20&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=260&section=header&text=DeepFER&fontSize=70&fontColor=ffffff&fontAlignY=32&desc=Facial%20Emotion%20Recognition%20%E2%80%A2%20CNN%20vs%20MobileNetV2&descAlignY=52&descSize=20&animation=fadeIn" width="100%"/>
 
 <br>
 
