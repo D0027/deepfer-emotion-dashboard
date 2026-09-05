@@ -882,27 +882,31 @@ elif panel == "🏗️ Model Architecture":
     with arch_tabs[0]:
         colA, colB = st.columns(2)
         with colA:
-                    with colA:
-                     st.markdown("""<div class="panel fade-in arch-card">
+            st.markdown("""<div class="panel fade-in arch-card">
             <h4>🧩 Model 1 — Custom CNN (from scratch)</h4>
             <p>Input: 48×48×1 grayscale</p>
-            <pre style="background:#0b0c14; border:1px solid rgba(255,255,255,0.1); border-radius:10px; padding:0.8rem; overflow-x:auto; font-family:'JetBrains Mono',monospace; font-size:0.82rem; color:#c9e8c9;">Conv2D(64)  → BN → ReLU   ×2  → MaxPool → Dropout(0.25)
+
+```
 Conv2D(64)  → BN → ReLU   ×2  → MaxPool → Dropout(0.25)
 Conv2D(128) → BN → ReLU   ×2  → MaxPool → Dropout(0.25)
 Conv2D(256) → BN → ReLU   ×2  → MaxPool → Dropout(0.30)
 Flatten → Dense(256) → BN → ReLU → Dropout(0.50)
-Dense(7, softmax)</pre>
+Dense(7, softmax)
+```
             <p><b>Optimizer:</b> Adam (lr=1e-3) &nbsp;|&nbsp; <b>Loss:</b> categorical cross-entropy</p>
             </div>""", unsafe_allow_html=True)
 
-                    with colB:
-                     st.markdown("""<div class="panel fade-in arch-card">
+        with colB:
+            st.markdown("""<div class="panel fade-in arch-card">
             <h4>🚀 Model 2 — MobileNetV2 (Transfer Learning)</h4>
             <p>Input: 96×96×3 (upsampled + channel-replicated)</p>
-            <pre style="background:#0b0c14; border:1px solid rgba(255,255,255,0.1); border-radius:10px; padding:0.8rem; overflow-x:auto; font-family:'JetBrains Mono',monospace; font-size:0.82rem; color:#c9e8c9;">MobileNetV2 (ImageNet weights, base frozen initially)
+
+```
+MobileNetV2 (ImageNet weights, base frozen initially)
 → GlobalAveragePooling2D
 → Dense(256) → BN → ReLU → Dropout(0.40)
-→ Dense(7, softmax)</pre>
+→ Dense(7, softmax)
+```
             <p><b>Phase 1:</b> train head only (base frozen), Adam 1e-3<br>
             <b>Phase 2:</b> unfreeze last 30 layers, fine-tune at Adam 1e-5</p>
             </div>""", unsafe_allow_html=True)
