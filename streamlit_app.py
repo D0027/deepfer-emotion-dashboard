@@ -907,9 +907,9 @@ MobileNetV2 (ImageNet weights, base frozen initially)
 → Dense(256) → BN → ReLU → Dropout(0.40)
 → Dense(7, softmax)
 ```
-            <p><b>Phase 1:</b> train head only (base frozen), Adam 1e-3<br>
-            <b>Phase 2:</b> unfreeze last 30 layers, fine-tune at Adam 1e-5</p>
-            </div>""", unsafe_allow_html=True)
+<p><b>Phase 1:</b> train head only (base frozen), Adam 1e-3<br>
+<b>Phase 2:</b> unfreeze last 30 layers, fine-tune at Adam 1e-5</p>
+</div>""", unsafe_allow_html=True)
 
     # ---- Real model.summary() outputs ----
     with arch_tabs[1]:
