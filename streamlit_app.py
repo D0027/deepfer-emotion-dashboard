@@ -893,8 +893,8 @@ Conv2D(256) → BN → ReLU   ×2  → MaxPool → Dropout(0.30)
 Flatten → Dense(256) → BN → ReLU → Dropout(0.50)
 Dense(7, softmax)
 ```
-            <p><b>Optimizer:</b> Adam (lr=1e-3) &nbsp;|&nbsp; <b>Loss:</b> categorical cross-entropy</p>
-            </div>""", unsafe_allow_html=True)
+<p><b>Optimizer:</b> Adam (lr=1e-3) &nbsp;|&nbsp; <b>Loss:</b> categorical cross-entropy</p>
+</div>""", unsafe_allow_html=True)
 
         with colB:
             st.markdown("""<div class="panel fade-in arch-card">
